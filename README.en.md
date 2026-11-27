@@ -56,8 +56,6 @@ $doudian->picture()->upload('https://example.com/a.jpg', 'main.jpg');
 
 ## Edit a product
 
-The platform requires `commit`.
-
 ```php
 $doudian->edit([
     'product_id' => 123456789,
@@ -112,6 +110,11 @@ $doudian->raw('ds.dy.item.edit', [
     'request' => ['product_id' => 123, 'commit' => false],
 ]);
 ```
+
+## Related platforms
+
+- DianSan E-commerce Open Platform: https://www.dianapi.com/
+- DouDian Open Platform: https://op.jinritemai.com/
 
 ## License
 

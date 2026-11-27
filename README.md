@@ -56,8 +56,6 @@ $doudian->picture()->upload('https://example.com/a.jpg', 'main.jpg');
 
 ## 编辑商品
 
-平台要求必须传 `commit`。
-
 ```php
 $doudian->edit([
     'product_id' => 123456789,
@@ -112,6 +110,11 @@ $doudian->raw('ds.dy.item.edit', [
     'request' => ['product_id' => 123, 'commit' => false],
 ]);
 ```
+
+## 相关平台
+
+- 点三电商开放平台：https://www.dianapi.com/
+- 抖店开放平台：https://op.jinritemai.com/
 
 ## 许可证
 
