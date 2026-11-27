@@ -2,6 +2,9 @@
 
 ## [1.1.0] - 2026-11-27
 
+### Added
+- 英文文档 `README.en.md`，与中文 `README.md` 顶部互链切换
+
 ### Removed
 - `examples/` 演示脚本与 `.env.example`
 - `DouDianFactory::fromEnv()` / `Config::fromEnv()`

@@ -1,5 +1,7 @@
 # diansan-doudian-sdk
 
+> Language: **中文** | [English](./README.en.md)
+
 点三开放平台抖店商品 API 的 PHP SDK。
 
 面向需要对接点三网关的业务系统，用工厂模式创建统一客户端，封装商品发布、编辑与异步批量上下架，减少重复的签名、请求拼装与结果解析工作。
