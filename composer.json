@@ -1,0 +1,39 @@
+{
+    "name": "digital-engine-tech/diansan-doudian-sdk",
+    "description": "点三开放平台抖店商品 API PHP SDK（发布 / 编辑 / 批量上下架）",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "diansan",
+        "doudian",
+        "douyin",
+        "ecommerce",
+        "sdk",
+        "composer"
+    ],
+    "homepage": "https://github.com/digital-engine-tech/diansan-doudian-sdk",
+    "support": {
+        "issues": "https://github.com/digital-engine-tech/diansan-doudian-sdk/issues",
+        "source": "https://github.com/digital-engine-tech/diansan-doudian-sdk"
+    },
+    "authors": [
+        {
+            "name": "Digital Engine Tech",
+            "homepage": "https://github.com/digital-engine-tech"
+        }
+    ],
+    "require": {
+        "php": ">=7.4 <9.0",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "DianSan\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
