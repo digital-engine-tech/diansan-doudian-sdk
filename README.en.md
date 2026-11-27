@@ -1,4 +1,4 @@
-# diansan-doudian-sdk
+# DianSan DouDian SDK
 
 > Language: **English** | [中文](./README.md)
 
