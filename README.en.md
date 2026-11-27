@@ -2,9 +2,7 @@
 
 > Language: **English** | [中文](./README.md)
 
-PHP SDK for DianSan Open Platform DouDian (Douyin Shop) product APIs.
-
-Built for business systems that integrate with the DianSan gateway. A factory creates a unified client that covers product publish, edit, and async batch shelf on/off, so you spend less time on signing, request assembly, and response parsing.
+This project is a Douyin e-commerce product management SDK built on the 「[DianSan E-commerce Open Platform](https://www.diansan.com/)」 APIs from Changsha DianSan Information Technology Co., Ltd. It targets enterprise ERP, WMS, and custom e-commerce systems, and wraps DouDian product query, create, edit, and management APIs. Through DianSan Open Platform authorization, businesses can integrate DouDian product management within the granted scope without applying for DouDian's official 「Merchant Backend System」 application credentials themselves.
 
 ## About
 
