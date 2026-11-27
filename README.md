@@ -4,39 +4,6 @@
 
 本项目是基于长沙市点三信息技术有限公司「[点三电商开放平台](https://www.diansan.com/)」API 开发的抖音电商商品管理 SDK，面向企业级 ERP、WMS 及自研电商管理系统，提供抖店商品数据查询、商品创建、编辑及管理等接口封装能力。通过点三开放平台授权接入，帮助企业在不直接申请抖店官方「商家后台系统」应用资质的情况下，集成已有授权范围内的抖店商品管理能力。
 
-## 关于本 SDK
-
-| 运行环境 | 技术栈 |
-| --- | --- |
-| PHP 7.4 – 8.x | Composer · Guzzle · 工厂模式 |
-
-**核心能力：**
-
-- **商品发布** — 封装 `ds.dy.item.add`，配合类目推荐、规则查询、属性与图片上传等前置能力
-- **商品编辑** — 封装 `ds.dy.item.edit`，支持草稿保存与提审（`commit`）
-- **异步批量上下架** — 封装全渠道店铺 SKU 批量上架 / 下架（单次最多 50 个）
-- **统一结果处理** — `ApiResult` 解析业务成功 / 失败、消息与数据
-- **工厂创建客户端** — `DouDianFactory::create` / `fromClient`
-
-包名：`digital-engine-tech/diansan-doudian-sdk`
-
-## 架构
-
-| 层级 | 类 | 职责 |
-| --- | --- | --- |
-| 工厂 | `DianSan\DouDianFactory` | 创建已配置客户端 |
-| 门面 | `DianSan\DouDian` | 业务入口（发布 / 编辑 / 上下架） |
-| 模块 | `ItemApi` / `ShelfApi` / `PictureApi` | 网关方法分组 |
-| 传输 | `Client` + `Signer` | HTTP 请求与签名 |
-| 结果 | `Support\ApiResult` | 统一成功 / 失败解析 |
-
-## 环境要求
-
-| 项目 | 版本 |
-| --- | --- |
-| PHP | `>=7.4 <9.0` |
-| `guzzlehttp/guzzle` | `^7.8` |
-
 ## 安装
 
 ```bash

@@ -4,39 +4,6 @@
 
 This project is a Douyin e-commerce product management SDK built on the 「[DianSan E-commerce Open Platform](https://www.diansan.com/)」 APIs from Changsha DianSan Information Technology Co., Ltd. It targets enterprise ERP, WMS, and custom e-commerce systems, and wraps DouDian product query, create, edit, and management APIs. Through DianSan Open Platform authorization, businesses can integrate DouDian product management within the granted scope without applying for DouDian's official 「Merchant Backend System」 application credentials themselves.
 
-## About
-
-| Runtime | Stack |
-| --- | --- |
-| PHP 7.4 – 8.x | Composer · Guzzle · Factory pattern |
-
-**Core capabilities:**
-
-- **Product publish** — wraps `ds.dy.item.add`, with category recommend, rule lookup, attributes, and image upload helpers
-- **Product edit** — wraps `ds.dy.item.edit`, supports draft save and submit (`commit`)
-- **Async batch shelf** — omni-channel store SKU batch on/off (max 50 per call)
-- **Unified results** — `ApiResult` parses business success / failure, message, and data
-- **Factory client** — `DouDianFactory::create` / `fromClient`
-
-Package: `digital-engine-tech/diansan-doudian-sdk`
-
-## Architecture
-
-| Layer | Class | Role |
-| --- | --- | --- |
-| Factory | `DianSan\DouDianFactory` | Build a configured client |
-| Facade | `DianSan\DouDian` | Business entry (publish / edit / shelf) |
-| Modules | `ItemApi` / `ShelfApi` / `PictureApi` | Gateway method groups |
-| Transport | `Client` + `Signer` | HTTP request and signing |
-| Result | `Support\ApiResult` | Unified success / failure parsing |
-
-## Requirements
-
-| Item | Version |
-| --- | --- |
-| PHP | `>=7.4 <9.0` |
-| `guzzlehttp/guzzle` | `^7.8` |
-
 ## Install
 
 ```bash
